@@ -1,12 +1,17 @@
 package ex2{
+  import java.io.Serializable
+
   import org.apache.spark.SparkConf
   import org.apache.spark.SparkContext
   import org.apache.spark.graphx._
   //tiebreak value is generated randomly before every graph iteration
+
+  // Création de la classe d'object utilisé dans les vertex
   class node(val id: Int, val color: Int = 1, val knighthood: Boolean = false, val tiebreakValue: Long = 1L) extends Serializable {
     override def toString: String = s"id : $id tiebreakValue : $tiebreakValue color : $color knighthood : $knighthood"
   }
 
+  // Classe de l'algorithme.
   class FC2 extends Serializable {
     def getChromaticNumber(g: Graph[node, String]): Int = {
       val aa = g.vertices.collect()
