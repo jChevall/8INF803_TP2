@@ -20,4 +20,4 @@ L'affichage se fait pas console on y retrouve :
 
 La simulation s'arrête si une des 2 équipes (Celle du Solar ou celle du Dragon) est anéantie.
 
-![Alt text](src\Capture.PNG?raw=true "Capture résultat")
+![Capture](https://github.com/jChevall/8INF803_TP2/blob/master/src/Capture.PNG)
